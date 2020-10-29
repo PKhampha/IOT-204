@@ -2,57 +2,30 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(99, 99, 102);
-}
-
-.camera-box {
-    height: 350px;
-    width: 350px;
-    background-color: white;
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
+    background-image: url('./img/erol-ahmed-AmzKuEnr1VY-unsplash.jpg');
+    background-size: cover;
 }
 
 .open-notification-button {
-    height: 60px;
-    width: 240px;
-    background-color: white;
+    height: 200px;
+    width: 60%;
+    background-color: #b90e0a;
     border-radius: 5px;
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
- 
+    animation: blinker 2s linear infinite;
 }
 
-.closed-notification-button {
-    height: 60px;
-    width: 240px;
-    background-color: lightgrey;
-    border-radius: 5px;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
- 
-}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 
 .open-notification-button img {
-    height: 50%;
-    position: absolute;
-    float: left;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding-left: 10px;
-}
-
-.closed-notification-button img {
     height: 50%;
     position: absolute;
     float: left;
@@ -65,9 +38,10 @@ body {
 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 60px;
+    color: white;
     align-items:center;
     justify-content:center;
     text-align: center;
-    padding-left: 30px;
+    padding-left: 60px;
 }
