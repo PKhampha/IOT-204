@@ -6,6 +6,19 @@ body {
     background-size: cover;
 }
 
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    padding-left: 60px;
+}
+
+
+/* OPEN NOTIFICATION */
 .open-notification-button {
     height: 200px;
     width: 60%;
@@ -14,6 +27,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
+    font-weight: bold;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     animation: blinker 2s linear infinite;
@@ -32,16 +46,30 @@ body {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    padding-left: 10px;
+    padding-left: 50px;
 }
 
-p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    color: white;
-    align-items:center;
-    justify-content:center;
-    text-align: center;
-    padding-left: 60px;
+/* CLOSED NOTIFICATION */
+.closed-notification {
+    height: 200px;
+    width: 60%;
+    background-color: green;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-weight: bold;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
+
+.closed-notification img {
+    height: 50%;
+    position: absolute;
+    float: left;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-left: 50px;
+}
+
