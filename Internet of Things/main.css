@@ -1,20 +1,25 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(99, 99, 102);
-    background-image: url('./img/erol-ahmed-AmzKuEnr1VY-unsplash.jpg');
-    background-size: cover;
+    background-color: #fff;
+    max-height: 100vh;
+    background-image: url(./img/erol-ahmed-AmzKuEnr1VY-unsplash.jpg);
+  }
+
+.h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    color: white;
+    font-weight: 900;
+    font-size: 20px;
     align-items:center;
     justify-content:center;
     text-align: center;
-    padding-left: 60px;
 }
 
 
@@ -30,7 +35,78 @@ p {
     font-weight: bold;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    animation: blinker 2s linear infinite;
+    animation: blinker 1s linear infinite;
+}
+
+
+
+
+/*
+    MAIN CONTAINER
+*/
+.container {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    color: black;
+    margin: 50px auto;
+}
+
+.card {
+    border: none;
+    /* box-shadow: 8px 8px 25px #EAE8E0; */
+    height: 600px;
+    padding: 80px 0 0 0;
+}
+
+.card-footer {
+    background-color: #fff;
+}
+
+.card .counter {
+    box-shadow: none;
+    border: 1px solid #EAE8E0;
+    float: left;
+    margin: 20px;
+    height: fit-content;
+    padding: 0;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: -20px;
+}
+
+img {
+    height: 150px;
+    display: block;
+    position: fixed;
+    left: 45%;
+}
+
+.open-notification {
+    height: fit-content;
+    color: #fff;
+    text-transform: uppercase;
+    height: 50px;
+    width: 60%;
+    background-color: #b90e0a;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: blinker 1s linear infinite;
 }
 
 @keyframes blinker {
@@ -39,37 +115,4 @@ p {
     }
   }
 
-.open-notification-button img {
-    height: 50%;
-    position: absolute;
-    float: left;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding-left: 50px;
-}
-
-/* CLOSED NOTIFICATION */
-.closed-notification {
-    height: 200px;
-    width: 60%;
-    background-color: green;
-    border-radius: 5px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    font-weight: bold;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.closed-notification img {
-    height: 50%;
-    position: absolute;
-    float: left;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding-left: 50px;
-}
-
+  
