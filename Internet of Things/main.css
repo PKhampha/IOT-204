@@ -4,7 +4,8 @@ body {
     background-color: #fff;
     max-height: 100vh;
     background-image: url(./img/erol-ahmed-AmzKuEnr1VY-unsplash.jpg);
-  }
+    background-position: center;
+}
 
 .h1 {
     font-family: 'Montserrat', sans-serif;
@@ -70,6 +71,8 @@ p {
     margin: 20px;
     height: fit-content;
     padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 h4 {
@@ -102,9 +105,10 @@ img {
     width: 60%;
     background-color: #b90e0a;
     border-radius: 5px;
+    padding-top: 10px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%, -50%);
     animation: blinker 1s linear infinite;
 }
@@ -113,6 +117,4 @@ img {
     50% {
       opacity: 0;
     }
-  }
-
-  
+  };
